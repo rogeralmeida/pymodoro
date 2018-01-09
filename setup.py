@@ -7,7 +7,7 @@ setup(
     install_requires=['Click', 'tqdm'],
     entry_points='''
         [console_scripts]
-        pomodoro=pomodoro:cli
+        pymodoro=pymodoro:cli
     ''',
     author='Roger Almeida',
     author_email="roger.eduardo@gmail.com",
