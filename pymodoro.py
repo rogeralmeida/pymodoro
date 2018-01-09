@@ -2,6 +2,7 @@ import click
 from tqdm import tqdm
 import time
 import os
+import sys
 
 SECONDS_PER_MINUTE=60
 
@@ -22,7 +23,11 @@ def cli(pomodoro_size, short_break_size, skip_break, auto_break, task):
     """
         pymodoro is a Pomodoro Timer!
     """
-    task_text = " ".join(task)
+    task_text = None
+    if len(task) == 1 and  task[0] == '-':
+        task_text = sys.stdin.read()
+    else:
+        task_text = " ".join(task)
     click.secho("Pomodoro for task: {}".format(task_text), fg='blue')
     for i in tqdm(range(pomodoro_size * SECONDS_PER_MINUTE)):
         time.sleep(0.99999)
