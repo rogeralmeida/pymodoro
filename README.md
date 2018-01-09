@@ -12,7 +12,7 @@ pip3 install pymodoro
 ```
 ## How to use
 
-The most basic format is `pymodoro <TASK>`. The `<TASK>` argument can be any sequence of words and space. You don't have to quote the title of you task. The following is a valid example: `pymodoro write more documentation for pymodoro`. This command creates a default 25 minutes long pomodoro with the task "write more documentation for pymodoro". When the 25 minutes pomodoro finishes, pymodoro will prompt you to confirm if you want to start a 5 minutes break.
+The most basic format is `pymodoro <TASK>`. The `<TASK>` argument can be any sequence of words and space. You don't have to quote your task's title. The following is a valid example: `pymodoro write more documentation for pymodoro`. This command creates a default 25 minutes long pomodoro with the task "write more documentation for pymodoro". When the 25 minutes pomodoro finishes, pymodoro will prompt you to confirm if you want to start a 5 minutes break.
 
 Of course pymodoro allows you to costumise its behaviour. You can change the pomodoro length, break length, you can skip the break, or skip the break prompt and start the break automatically.
 For more details about how to use, refer to the `pymodoro --help` output bellow:
@@ -75,4 +75,3 @@ Creating pomodoro passing the task title as argument
 ### 1.0.1
 
 Be able to receive the title task from stdin
-
