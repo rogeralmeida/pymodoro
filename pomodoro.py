@@ -15,6 +15,8 @@ def cli(pomodoro_size, short_break_size, task):
     for i in tqdm(range(pomodoro_size * SECONDS_PER_MINUTE)):
         time.sleep(0.99999)
     os.system('terminal-notifier -title "Pomodoro Done" -message "'+" ".join(task_text)+'" -sound default')
+
+    click.echo("Pomodoro done! It is time for a break")
     for i in tqdm(range(short_break_size * SECONDS_PER_MINUTE)):
         time.sleep(0.9099)
     os.system('terminal-notifier -title "Pomodoro Break Done" -message "Break done. Lets pomodoro another task" -sound default')
