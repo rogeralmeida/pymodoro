@@ -22,12 +22,29 @@ def do_break(short_break_size ):
 def cli(pomodoro_size, short_break_size, skip_break, auto_break, task):
     """
         pymodoro is a Pomodoro Timer!
+
+        The basic usage is:
+
+            pymodoro <TASK>
+            
+
+        Examples:
+
+            Starting a default 25 minutes long pomodoro on task 'write blog post': `pymodoro write blog post`
+
+            Starting a 35 minutes long pomodoro on task 'call mum': `pymodoro --pomodoro-size 35 call mum`
+
+            Starting a default 25 long pomodoro task reading the task title from stdin: `echo "This is a test" | pymodoro -`
+
+            Starting a default 25 minutes long pomodoro that will start a 5 minutes break automatically when the pomodoro finishes: `pymodoro --auto-break some custom task`
+            
     """
-    task_text = None
+    task_text = ""
     if len(task) == 1 and  task[0] == '-':
         task_text = sys.stdin.read()
     else:
         task_text = " ".join(task)
+
     click.secho("Pomodoro for task: {}".format(task_text), fg='blue')
     for i in tqdm(range(pomodoro_size * SECONDS_PER_MINUTE)):
         time.sleep(0.99999)
