@@ -6,3 +6,4 @@ man/
 pip-selfcheck.json
 pyvenv.cfg
 *.egg-info/
+dist/
