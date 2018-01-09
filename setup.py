@@ -11,7 +11,7 @@ setup(
     ''',
     author='Roger Almeida',
     author_email="roger.eduardo@gmail.com",
-    description="Pomodoro timer",
+    description="It's a command line pomodoro timer",
     license="MIT",
     keywords="pomodoro technique timer application cli command line tool",
     url="https://github.com/rogeralmeida/pomodoro",
