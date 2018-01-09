@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='pymodoro',
-    version='1.1.0',
+    version='1.1.1',
     py_modules=['bujo'],
     install_requires=['Click', 'tqdm'],
     entry_points='''
