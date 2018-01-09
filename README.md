@@ -14,9 +14,14 @@ pip3 install pymodoro
 ```
 Usage: pymodoro [OPTIONS] [TASK]...
 
+  pymodoro is a Pomodoro Timer!
+
 Options:
   --pomodoro-size INTEGER     Pomodoro size in MINUTES
   --short-break-size INTEGER  Break size in MINUTES
+  --skip-break                When present, pymodoro will skip the break
+  --auto-break                When present, pymodoro will not expect a
+                              confirmation to start a break
   --help                      Show this message and exit.
 ```
 ### Examples
