@@ -72,6 +72,6 @@ Please refer to LICENSE.txt
 
 Creating pomodoro passing the task title as argument
 
-### 1.0.1
+### 1.1.0
 
 Be able to receive the title task from stdin
