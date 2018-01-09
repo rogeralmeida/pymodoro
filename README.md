@@ -1,10 +1,10 @@
-# Pomodoro
+# Pymodoro
 
-It is a command line tool to assist you on applying the Pomodoro Techinique
+It is a command line pomodoro timer to assist you apply the Pomodoro Techinique
 
 ## What's the Pomodoro Technique
 
-Please, refer to the [official website](https://cirillocompany.de/pages/pomodoro-technique).
+Please, refer to the [official Pomodoro Technique website](https://cirillocompany.de/pages/pomodoro-technique).
 
 ## Installation
 ```
