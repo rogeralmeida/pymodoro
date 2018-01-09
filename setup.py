@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='pomodoro',
-    version='0.0.1',
+    name='pymodoro',
+    version='1.0.0',
     py_modules=['bujo'],
     install_requires=['Click', 'tqdm'],
     entry_points='''
