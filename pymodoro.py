@@ -16,7 +16,10 @@ def cli(pomodoro_size, short_break_size, task):
         time.sleep(0.99999)
     os.system('terminal-notifier -title "Pomodoro Done" -message "'+" ".join(task_text)+'" -sound default')
 
-    click.secho("Pomodoro done! It is time for a break", fg='green')
-    for i in tqdm(range(short_break_size * SECONDS_PER_MINUTE)):
-        time.sleep(0.9099)
-    os.system('terminal-notifier -title "Pomodoro Break Done" -message "Break done. Lets pomodoro another task" -sound default')
+    click.echo("Start a short break of {} minutes?[yn]".format(short_break_size))
+    option = click.getchar()
+    if option == 'y':
+        click.secho("Pomodoro done! It is time for a break", fg='green')
+        for i in tqdm(range(short_break_size * SECONDS_PER_MINUTE)):
+            time.sleep(0.9099)
+        os.system('terminal-notifier -title "Pomodoro Break Done" -message "Break done. Lets pomodoro another task" -sound default')
