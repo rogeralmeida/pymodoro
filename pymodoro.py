@@ -11,12 +11,12 @@ SECONDS_PER_MINUTE=60
 @click.argument('task', nargs=-1)
 def cli(pomodoro_size, short_break_size, task):
     task_text = " ".join(task)
-    click.echo("Pomodoro for task: {}".format(task_text))
+    click.secho("Pomodoro for task: {}".format(task_text), fg='blue')
     for i in tqdm(range(pomodoro_size * SECONDS_PER_MINUTE)):
         time.sleep(0.99999)
     os.system('terminal-notifier -title "Pomodoro Done" -message "'+" ".join(task_text)+'" -sound default')
 
-    click.echo("Pomodoro done! It is time for a break")
+    click.secho("Pomodoro done! It is time for a break", fg='green')
     for i in tqdm(range(short_break_size * SECONDS_PER_MINUTE)):
         time.sleep(0.9099)
     os.system('terminal-notifier -title "Pomodoro Break Done" -message "Break done. Lets pomodoro another task" -sound default')
