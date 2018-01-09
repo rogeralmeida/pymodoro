@@ -66,3 +66,13 @@ Fork. Change. Pull Request.
 
 Please refer to LICENSE.txt
 
+## Changelog
+
+### 1.0.0
+
+Creating pomodoro passing the task title as argument
+
+### 1.1.0
+
+Be able to receive the title task from stdin
+
