@@ -1,10 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='pymodoro',
-    version='1.1.1',
-    py_modules=['bujo'],
+    version='1.1.4',
+    packages=find_packages(),
     install_requires=['Click', 'tqdm'],
+    py_modules=['pymodoro'],
+    scripts=['pymodoro.py'],
     entry_points='''
         [console_scripts]
         pymodoro=pymodoro:cli
